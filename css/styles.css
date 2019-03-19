@@ -4,6 +4,12 @@ body{
 
 /* 1. Make the nav class container flex and have it displayed in a row to the right of the browser */
 
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
 /* 2. add media queries for both 920px and 600px breakpoints with the following properties:*/
 
@@ -19,12 +25,49 @@ background color blue
 font color white 
 hover color yellow */
 
+@media only screen and (max-width: 920px){
+    .container {
+        justify-content: space-around;
+        font-size: 30px;
+    }
+
+    a {
+        color: red;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        background-color: yellow;
+    }
+
+}
+
 
 /* 3. Make the div class main flex with the following properties:
 
 row-reverse
 wrap 
 space-evenly */
+
+
+.main {
+    display: flex;
+    flex-flow: wrap row-reverse;
+    justify-content: space-evenly;
+    
+}
 
 
 /* 4. Give the div classes of specials the following properties with your own values:
@@ -35,6 +78,15 @@ padding
 width 
 text-align */
 
+.specials {
+    border: 1px solid turquoise;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+}
+
 
 /* 5. Create 3 media queries for the div class main for the following breakpoints:
 600px
@@ -42,6 +94,32 @@ text-align */
 920px
 
 add your own properties for each of the breakpoints. */
+
+
+@media only screen and (max-width: 920px){
+    .main {
+        background-color: green;
+
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main {
+        background-color: pink;
+        font-family: 'Lucida Sans';
+        
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main {
+        background-color: antiquewhite;
+        font-size: 20px;
+        font-family: 'Arial Narrow';
+
+    }
+}
+
 
 /* 6. Change the order of the letters in the block-order div to the following:
 CADB */
