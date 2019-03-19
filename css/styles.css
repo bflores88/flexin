@@ -137,3 +137,12 @@ Add different flex properties of your choice and make it responsive based on the
 768px
 920px
 */
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 1px dotted gray;
+
+}
